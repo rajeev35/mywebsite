@@ -2,7 +2,9 @@ import React from 'react';
 import "./about.css";
 import AboutImg from "../../assets/AboutImg1.png"
 import Info from './Info.js';
+
 const CV_LINK = "https://drive.google.com/file/d/11uAbz81cjrpF5xw011YPD-Sdpr-lfj3e/view";
+const YOUTUBE_VIDEO_ID = "xFF5_bLtM-A&t=397s"; // Apna YouTube Video ID yaha daalein
 
 export const About = () => {
   return (
@@ -15,17 +17,15 @@ export const About = () => {
          <div className="about__data">
                <Info />
 
-               
-            
             <p className="about__description">
-            
                🚀 Open to exciting opportunities and conversations in the tech space!
-                
             </p>
+
+            {/* Resume Download Button */}
             <a href={CV_LINK} className="button button--flex" target="_blank" rel="noopener noreferrer">
               Download Resume
                <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -51,8 +51,20 @@ export const About = () => {
               </svg>
             </a>
 
-         </div>
+            {/* Autoplay YouTube Video */}
+            <div className="about__video">
+              <iframe
+                width="100%"
+                height="250"
+                src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}`}
+                title="YouTube Video"
+                frameBorder="0"
+                allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
 
+         </div>
         </div>
     </section>
   )
