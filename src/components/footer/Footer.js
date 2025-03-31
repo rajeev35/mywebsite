@@ -12,11 +12,11 @@ const Footer = () => {
                 </li>
 
                 <li>
-                    <a href="#portfolio" className="footer__link">Projects</a>
+                    <a href="#projects" className="footer__link">Projects</a>
                 </li>
 
                 <li>
-                    <a href="#testimonials" className="footer__link">Testimonials</a>
+                    <a href="#services" className="footer__link">Services</a>
                 </li>
             </ul>
 
@@ -25,7 +25,7 @@ const Footer = () => {
         <i class="bx bxl-facebook"></i>
         </a>
 
-        <a href="https://www.instagram.com/rajeev_kumar_q.0/" className="footer__social-link" target="_blank">
+        <a href="https://www.instagram.com/krajeev.me/" className="footer__social-link" target="_blank">
         <i class="bx bxl-instagram"></i>
         </a>
 
@@ -33,7 +33,7 @@ const Footer = () => {
         <i class="bx bxl-twitter"></i>
         </a>
            </div>
-           <span className="footer__copy">Rajeev Kumar. Some rights reserved</span>
+           <span className="footer__copy">Copyright © 2025 Rajeev Kumar. All rights reserved.</span>
         </div>
     </footer>
   )

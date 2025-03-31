@@ -34,10 +34,10 @@
     font-size: 1rem;
     transition: 0.3s;
 }
-.services__button:hover .services__button-icon{
-
-    transform: translateX(00.25rem);
+.services__button:hover .services__button-icon {
+    transform: translateX(0.25rem);
 }
+
 
 .services__modal{
     position: fixed;
