@@ -58,7 +58,7 @@ const Qualification = () => {
                             <span className="qualification_line"></span>
                         </div>
                         <div>
-                            <h3 className="qualification__title"> High School</h3>
+                            <h3 className="qualification__title"> Senior Secondary</h3>
                             <span className="qualification__subtitle">
                             MJK College Bettiah</span>
                             <div className="qualification__calendar">
@@ -70,7 +70,7 @@ const Qualification = () => {
 
                     <div className="qualification__data">
                         <div>
-                            <h3 className="qualification__title">Higher School</h3>
+                            <h3 className="qualification__title">High School</h3>
                             <span className="qualification__subtitle">
                             Ms Memorial Public School</span>
                             <div className="qualification__calendar">
@@ -84,24 +84,6 @@ const Qualification = () => {
                             <span className="qualification_line"></span>
                         </div>
                     </div>
-
-                    <div className="qualification__data">
-                        <div></div>
-
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification_line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification__title">Secondary School</h3>
-                            <span className="qualification__subtitle">
-                            Saraswati Shishu Vidya Mandir</span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>
-                                 March - 2017
-                            </div>
-                        </div>             
-                    </div>
                 </div>
 
                 <div className={ toggleState === 2 ?
@@ -110,12 +92,12 @@ const Qualification = () => {
 
 
                         <div>
-                            <h3 className="qualification__title">Web Development</h3>
+                            <h3 className="qualification__title">Software Engineer</h3>
                             <span className="qualification__subtitle">
-                            Oasis Infobyte</span>
+                            Raasa Karts</span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i>
-                                 Jan 2023
+                                 Dec 2024 - Present
                             </div>
                         </div>
 
@@ -133,31 +115,14 @@ const Qualification = () => {
                             <span className="qualification_line"></span>
                         </div>
                         <div>
-                            <h3 className="qualification__title">Web Design </h3>
+                            <h3 className="qualification__title">Software Engineer Intern </h3>
                             <span className="qualification__subtitle">
-                            Code Clause</span>
+                            Raasa Karts</span>
                             <div className="qualification__calendar">
                                 <i className="uil uil-calendar-alt"></i>
-                                 Dec 2022
+                                 Sep 2024 - Dec 2024
                             </div>
                         </div>             
-                    </div>
-
-                    <div className="qualification__data">
-                        <div>
-                            <h3 className="qualification__title">C++ & DSA</h3>
-                            <span className="qualification__subtitle">
-                            Coursera</span>
-                            <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i>
-                                 2021 - 2022
-                            </div>
-                        </div>
-
-                        <div>
-                            <span className="qualification__rounder"></span>
-                            <span className="qualification_line"></span>
-                        </div>
                     </div>
 
                    
