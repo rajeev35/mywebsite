@@ -25,7 +25,7 @@ const Footer = () => {
         <i class="bx bxl-facebook"></i>
         </a>
 
-        <a href="https://www.instagram.com/rajeev_kumar_q.0/" className="footer__social-link" target="_blank">
+        <a href="https://www.instagram.com/krajeev.me/" className="footer__social-link" target="_blank">
         <i class="bx bxl-instagram"></i>
         </a>
 

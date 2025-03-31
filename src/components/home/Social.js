@@ -11,7 +11,7 @@ export const Social = () => {
         <i class="uil uil-github-alt"></i>
         </a>
 
-        <a href="https://www.instagram.com/rajeev_kumar_q.0/" className="home__social-icon" target="_blank">
+        <a href="https://www.instagram.com/krajeev.me/" className="home__social-icon" target="_blank">
         <i class="uil uil-instagram"></i>
         </a>
     </div>
