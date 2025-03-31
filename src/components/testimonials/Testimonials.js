@@ -18,8 +18,8 @@ const Testimonials = () => {
          grabCursor={true}
          spaceBetween={24}
          autoplay={{
-           delay: 2000, // 3 seconds per slide
-           disableOnInteraction: false, // Manual swipe ke baad bhi autoplay chalu rahega
+           delay: 2000, 
+           disableOnInteraction: false, 
          }}
          pagination={{
           clickable: true,
