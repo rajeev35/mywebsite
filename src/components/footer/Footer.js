@@ -33,7 +33,7 @@ const Footer = () => {
         <i class="bx bxl-twitter"></i>
         </a>
            </div>
-           <span className="footer__copy">Rajeev Kumar. all rights reserved</span>
+           <span className="footer__copy">Copyright © 2025 Rajeev Kumar. All rights reserved.</span>
         </div>
     </footer>
   )
