@@ -1,8 +1,8 @@
 import React from 'react';
 import "./about.css";
-import AboutImg from "../../assets/rajeev.jpeg";
-import CV from "../../assets/rajeev-resume.pdf";
+import AboutImg from "../../assets/AboutImg1.png"
 import Info from './Info.js';
+const CV_LINK = "https://drive.google.com/file/d/11uAbz81cjrpF5xw011YPD-Sdpr-lfj3e/view";
 
 export const About = () => {
   return (
@@ -15,19 +15,15 @@ export const About = () => {
          <div className="about__data">
                <Info />
 
-               <p className="about__description">
-               Hello!  
-
-                I am Rajeev kumar currently I am an ug student pursuing my bachelor’s  degree  ( 5th semester) in information technology  from ABES institute of technology Ghaziabad india.
-               </p>
+               
             
             <p className="about__description">
             
-                Web Developer I create Web pages with UI / UX user interface  I have Experience and many clients are happy with the projects.
+               🚀 Open to exciting opportunities and conversations in the tech space!
                 
             </p>
-            <a download="" href={CV} className="button
-            button--flex">Download Resume
+            <a href={CV_LINK} className="button button--flex" target="_blank" rel="noopener noreferrer">
+              Download Resume
                <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

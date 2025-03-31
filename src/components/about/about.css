@@ -5,7 +5,8 @@
 
 }
 .about__img{
-    width: 250px;
+    width: 300px;
+    height: 400px;
     border-radius: 1.5rem;
     justify-self: center;
 }

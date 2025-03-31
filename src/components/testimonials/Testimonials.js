@@ -1,22 +1,16 @@
 import React from 'react';
-
 import "./testimonial.css";
 import { Data } from "./Data.js";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
 import { Pagination } from "swiper";
 
 const Testimonials = () => {
   return (
-    <section className="testimonial container section">
+    <section className="testimonial container section" id="projects">
         <h2 className="section__title">My Projects</h2>
-        <span className="section__subtitle">Based  on Web Dev & ML</span>
+        <span className="section__subtitle">Based on Web Dev & ML</span>
         <Swiper className="testimonial__container"
          loop={true}
          grabCursor={true}
@@ -36,8 +30,7 @@ const Testimonials = () => {
          
          }}
          modules={[Pagination]}
-        
-         >
+        >
             {Data.map(({id, image, title, description }) => {
                 return(
                     <SwiperSlide className="testimonial__card" key={id}>
@@ -45,7 +38,6 @@ const Testimonials = () => {
                         className="testimonial__img" />
                         <h3 className="testimoial__name">{title}</h3>
                         <p className="testimonial__description">{description}</p>
-
                     </SwiperSlide>
                 );
             })}
