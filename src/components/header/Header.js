@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import Chatbot from "../chatbot/Chatbot.jsx";
 import "./header.css";
 
 const Header = () => {
-  const [Toggle, showMenu] = useState(false);
+  const [toggleMenu, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+  const [chatVisible, setChatVisible] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,15 +21,22 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const toggleChat = () => setChatVisible(prev => !prev);
+
   return (
     <>
       <header className="header">
         <nav className="nav container">
+          <button className="deep-ai-btn" onClick={toggleChat}>
+            <i className="uil uil-robot"></i> Jiva AI
+          </button>
+
+
           <a href="index.html" className="nav__logo">
             Rajeev
           </a>
 
-          <div className={`nav__menu ${Toggle ? "show-menu" : ""}`}>
+          <div className={`nav__menu ${toggleMenu ? "show-menu" : ""}`}>
             <ul className="nav__list grid">
               {[
                 { id: "#home", icon: "uil-estate", text: "Home" },
@@ -42,7 +51,7 @@ const Header = () => {
                     href={id}
                     onClick={() => {
                       setActiveNav(id);
-                      showMenu(false); // Close menu on click
+                      showMenu(false);
                     }}
                     className={`nav__link ${activeNav === id ? "active-link" : ""}`}
                   >
@@ -51,15 +60,19 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-
-            <i className="uil uil-times nav__close" onClick={() => showMenu(false)}></i>
+            <i
+              className="uil uil-times nav__close"
+              onClick={() => showMenu(false)}
+            ></i>
           </div>
 
-          <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+          <div className="nav__toggle" onClick={() => showMenu(!toggleMenu)}>
             <i className="uil uil-apps"></i>
           </div>
         </nav>
       </header>
+
+      <Chatbot visible={chatVisible} onClose={() => setChatVisible(false)} />
     </>
   );
 };
