@@ -52,6 +52,39 @@
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
+  .deep-ai-btn {
+    background-color: #007BFF; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .deep-ai-btn:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+  }
+  
+  .deep-ai-btn:focus {
+    outline: none;
+  }
+  
+  .deep-ai-btn i {
+    margin-right: 8px; 
+  }
+  
+  .deep-ai-btn:active {
+    background-color: #003f7f; 
+    transform: scale(1);
+  }
+  
+
 /* Responsive Menu */
 @media screen and (max-width: 768px) {
     .header {
