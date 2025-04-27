@@ -13,7 +13,7 @@ const Chatbot = ({ visible, onClose }) => {
       messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [messages, visible]);
-
+  const apiKey = process.env.REACT_APP_API_KEY; 
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -21,12 +21,12 @@ const Chatbot = ({ visible, onClose }) => {
     setMessages(prev => [...prev, userMsg]);
     setInput("");
     setLoading(true);
-
+  
     try {
       const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          Authorization: "Bearer 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",
+          Authorization: `Bearer ${apiKey}`,  // Use the environment variable here
           'Content-Type': "application/json",
         },
         body: JSON.stringify({
@@ -44,6 +44,7 @@ const Chatbot = ({ visible, onClose }) => {
       setLoading(false);
     }
   };
+  
 
   if (!visible) return null;
 
